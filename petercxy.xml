@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Github remote -->
+    <remote name="petercxy"
+	    fetch="https://github.com/PeterCxy" />
+    <remote name="los"
+	    fetch="https://github.com/LineageOS" />
+
+    <remove-project name="android_build_make" />
+    <remove-project name="android_device_oneplus_oneplus3" />
+    <remove-project name="proprietary_vendor_oneplus" />
+    <remove-project name="android_frameworks_base" />
+    <remove-project name="android_hardware_qcom_display-caf-msm8996" />
+    <remove-project name="android_hardware_qcom_display-caf-msm8998" />
+    <remove-project name="android_hardware_qcom_audio-caf-msm8998" />
+    <remove-project name="android_hardware_qcom_media-caf-msm8998" />
+    <remove-project name="android_frameworks_av" />
+
+    <project path="build/make" name="android_build_make" remote="petercxy" revision="p" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+
+    <project path="device/oneplus/oneplus3" name="android_device_oneplus_oneplus3" remote="petercxy" revision="p" />
+    <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="petercxy" revision="p" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="petercxy" revision="p" />
+    <project path="device/smartisan/osborn" name="android_device_smartisan_osborn" remote="petercxy" revision="p" />
+    <project path="vendor/smartisan/osborn" name="android_vendor_smartisan_osborn" remote="petercxy" revision="p" />
+    <project path="kernel/smartisan/sdm660" name="android_kernel_smartisan_sdm660" remote="petercxy" revision="p" />
+    <project path="hardware/qcom/display-caf-msm8998" name="android_hardware_qcom_display-caf-msm8998" remote="petercxy" revision="p" />
+    <project path="hardware/qcom/display-caf-msm8996" name="android_hardware_qcom_display-caf-msm8996" remote="petercxy" revision="p" />
+    <project path="hardware/qcom/audio-caf-msm8998" name="android_hardware_qcom_audio-caf-msm8998" remote="nos" revision="p" />
+    <project path="hardware/qcom/media-caf-msm8998" name="android_hardware_qcom_media-caf-msm8998" remote="nos" revision="p" />
+    <!--<project path="external/json-c" name="android_external_json-c" remote="los" revision="lineage-16.0" />-->
+    <project path="frameworks/av" name="android_frameworks_av-1" remote="petercxy" revision="p" />
+</manifest>
