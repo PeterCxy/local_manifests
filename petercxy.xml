@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="petercxy"
+	    fetch="https://github.com/PeterCxy" />
+    <remove-project name="android_build_make"/>
+    <remove-project name="android_vendor_lineage"/>
+    <remove-project name="android_hardware_qcom_power"/>
+
+    <project path="build/make" name="android_build_make" remote="petercxy" revision="lineage-16.0" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>	  
+    <project path="device/xiaomi/violet" name="android_device_xiaomi_violet" remote="petercxy" revision="lineage-16.0"/>
+    <project path="kernel/xiaomi/sm6150" name="android_kernel_xiaomi_sm6150" remote="petercxy" revision="lineage-16.0"/>
+    <project path="vendor/xiaomi/violet" name="android_vendor_xiaomi_violet" remote="petercxy" revision="lineage-16.0"/>
+    <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" revision="lineage-16.0"/>
+    <project path="prebuilts/lineage-sdk" name="LineageOS/android_prebuilts_lineage-sdk" remote="lineage" revision="lineage-16.0"/>
+    <project path="vendor/lineage" name="android_vendor_lineage" remote="petercxy" revision="lineage-16.0"/>
+    <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="petercxy" revision="lineage-16.0"/>
+</manifest>
