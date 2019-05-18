@@ -2,7 +2,7 @@
 <manifest>
     <remote name="petercxy"
 	    fetch="https://github.com/PeterCxy" />
-    <remove-project name="LineageOS/android_build_make"/>
+    <remove-project name="LineageOS/android_build"/>
     <remove-project name="LineageOS/android_vendor_lineage"/>
     <remove-project name="LineageOS/android_hardware_qcom_power"/>
 
