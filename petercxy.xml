@@ -24,7 +24,7 @@
     <project path="system/vold" name="android_system_vold" remote="petercxy" revision="lineage-16.0"/>
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="petercxy" revision="lineage-16.0"/>
     <project path="device/xiaomi/violet" name="android_device_xiaomi_violet" remote="petercxy" revision="lineage-16.0"/>
-    <project path="kernel/xiaomi/sm6150" name="android_kernel_xiaomi_sm6150" remote="petercxy" revision="lineage-16.0"/>
+    <project path="kernel/xiaomi/sm6150" name="android_kernel_xiaomi_sm6150" remote="petercxy" revision="lineage-16.0-caf"/>
     <project path="vendor/xiaomi/violet" name="android_vendor_xiaomi_violet" remote="petercxy" revision="lineage-16.0"/>
     <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" revision="lineage-16.0"/>
     <project path="prebuilts/lineage-sdk" name="LineageOS/android_prebuilts_lineage-sdk" remote="lineage" revision="lineage-16.0"/>
