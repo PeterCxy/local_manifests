@@ -9,6 +9,8 @@
     <remove-project name="LineageOS/android_system_core"/>
     <remove-project name="LineageOS/android_system_vold"/>
     <remove-project name="LineageOS/android_hardware_interfaces"/>
+    <remove-project name="LineageOS/android_hardware_lineage_interfaces"/>
+    <remove-project name="LineageOS/android_frameworks_av"/>
 
     <project path="build/make" name="android_build_make" remote="petercxy" revision="lineage-16.0" >
         <copyfile src="core/root.mk" dest="Makefile" />
@@ -27,4 +29,6 @@
     <project path="prebuilts/lineage-sdk" name="LineageOS/android_prebuilts_lineage-sdk" remote="lineage" revision="lineage-16.0"/>
     <project path="vendor/lineage" name="android_vendor_lineage" remote="petercxy" revision="lineage-16.0"/>
     <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="petercxy" revision="lineage-16.0"/>
+    <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="petercxy" revision="lineage-16.0"/>
+    <project path="frameworks/av" name="android_frameworks_av-1" remote="petercxy" revision="lineage-16.0"/>
 </manifest>
